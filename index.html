@@ -4,10 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="description" content="GameBook made in c++ for Bellecour Ecole student project.">
-        <meta name="keywords" content="C++ Gamebook Bellecour Ecole">
+        <meta name="keywords" content="C++, Gamebook, Bellecour Ecole">
         <meta name="viewport" content="width=device-width, initial-scale=1" charset=utf-8>
 
-        <link rel="canonical" href="https://adamjwright.com/wasm_maze_game">
         <link rel="shortcut icon" href="/favicon-1.ico">
 
         <title>Izydor</title>
@@ -197,6 +196,44 @@
               obj.instance.exports.main();
             });
         </script>
+
+        <div id="buttons">
+            <script>
+                var buttons = []
+
+                function createButton(id) {
+                  var button = document.createElement("button");
+                  button.setAttribute("id", id);
+                  button.innerHTML = id;
+                  button.className = "gameButton";
+                  button.addEventListener("click", function() {
+                    buttonPressed(id);
+                  });
+                  document.body.appendChild(button);
+                  buttons.push(button);
+                }
+
+                // Create a variable to store the id of the button that was pressed
+                var lastPressed = "none";
+
+                // Create a function to handle button presses
+                function buttonPressed(id) {
+                  lastPressed = id;
+                  console.log(`Button ${id} pressed`);
+                }
+
+                function resetButtons() {
+                    lastPressed = "none";
+                    if (buttons.length) {
+                        for (var i = 0; i < buttons.length; i++) {
+                            buttons[i].parentNode.removeChild(buttons[i]);
+                          }
+
+                        buttons = []
+                    }
+                }
+            </script>
+       </div>
 
     </body>
 </html>
