@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "pages", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/config.toml", "start": 0, "end": 198}, {"filename": "/pages/game.toml", "start": 198, "end": 322}, {"filename": "/pages/index.toml", "start": 322, "end": 517}, {"filename": "/pages/unknow.toml", "start": 517, "end": 675}], "remote_package_size": 675});
+    loadPackage({"files": [{"filename": "/client.ini", "start": 0, "end": 112}, {"filename": "/config.toml", "start": 112, "end": 485}, {"filename": "/pages/cond.toml", "start": 485, "end": 794}, {"filename": "/pages/data.toml", "start": 794, "end": 994}, {"filename": "/pages/final.toml", "start": 994, "end": 1142}, {"filename": "/pages/index.toml", "start": 1142, "end": 1386}], "remote_package_size": 1386});
 
   })();
 
@@ -1397,7 +1397,7 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  81356: ($0) => { createButton(UTF8ToString($0)); }
+  81564: ($0) => { createButton(UTF8ToString($0)); }
 };
 
 
