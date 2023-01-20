@@ -1,8 +1,6 @@
 [config]
-name = "Milestone 3 Build"
-type = "default"
+name = "Great Page"
+type = "Reset"
 [content]
-greatings = "Happy to see you !"
-explanation_a = "Welcome to the example of the game !  We will explain you everything about the game."
 [choices]
-start = ["Start", "true", "start"]
+Choice_1 = ["Start", "true", "C_0_s_1"]

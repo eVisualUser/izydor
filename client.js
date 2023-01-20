@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "pages", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/client.ini", "start": 0, "end": 112}, {"filename": "/config.toml", "start": 112, "end": 485}, {"filename": "/pages/cond.toml", "start": 485, "end": 794}, {"filename": "/pages/data.toml", "start": 794, "end": 994}, {"filename": "/pages/final.toml", "start": 994, "end": 1142}, {"filename": "/pages/index.toml", "start": 1142, "end": 1386}], "remote_package_size": 1386});
+    loadPackage({"files": [{"filename": "/config.toml", "start": 0, "end": 407}, {"filename": "/pages/C_0_s_1.toml", "start": 407, "end": 1121}, {"filename": "/pages/C_0_s_2.toml", "start": 1121, "end": 1737}, {"filename": "/pages/C_0_s_3.toml", "start": 1737, "end": 1997}, {"filename": "/pages/C_0_s_4.toml", "start": 1997, "end": 2455}, {"filename": "/pages/C_0_s_5.toml", "start": 2455, "end": 2560}, {"filename": "/pages/cond.toml", "start": 2560, "end": 2869}, {"filename": "/pages/data.toml", "start": 2869, "end": 3069}, {"filename": "/pages/final.toml", "start": 3069, "end": 3217}, {"filename": "/pages/index.toml", "start": 3217, "end": 3321}], "remote_package_size": 3321});
 
   })();
 
@@ -1397,7 +1397,7 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  81564: ($0) => { createButton(UTF8ToString($0)); }
+  82108: ($0) => { createButton(UTF8ToString($0)); }
 };
 
 
@@ -4031,6 +4031,10 @@ var ASM_CONSTS = {
       return runEmAsmFunction(code, sigPtr, argbuf);
     }
 
+  function _emscripten_date_now() {
+      return Date.now();
+    }
+
   function _emscripten_memcpy_big(dest, src, num) {
       HEAPU8.copyWithin(dest, src, src + num);
     }
@@ -5721,6 +5725,7 @@ var asmLibraryArg = {
   "__syscall_openat": ___syscall_openat,
   "abort": _abort,
   "emscripten_asm_const_int": _emscripten_asm_const_int,
+  "emscripten_date_now": _emscripten_date_now,
   "emscripten_memcpy_big": _emscripten_memcpy_big,
   "emscripten_resize_heap": _emscripten_resize_heap,
   "emscripten_run_script": _emscripten_run_script,
