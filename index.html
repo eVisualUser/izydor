@@ -332,31 +332,29 @@
                     const databaseId = "8674a4dc861844a6ad3c376775ab7483";
 
                     // Authenticate with Notion API
-                    const token = "secret_8KiEI634byVgj47HVul6VsvrjERucOuDM9Z7uwsqy0w";
+                    const token = "secret_59P6LMVsbHflHGBjjEKXQaxri1reMzMXni8yH2sVXe3";
                     const headers = {
                         "content-type": "application/json",
                         "authorization": `Bearer ${token}`
                     };
                     // Create an object for the new database entry
                     const newRecord = {
-                        Name: {
-                            title: [
-                                {
-                                    text: {
-                                        content: name
-                                    }
-                                }
-                            ]
-                        },
-                        Message: {
-                            rich_text: [
-                                {
-                                    text: {
-                                        content: text
-                                    }
-                                }
-                            ]
-                        }
+                    title: [
+                    {
+                    text: {
+                    content: name
+                    }
+                    }
+                    ],
+                    Message: {
+                    rich_text: [
+                    {
+                    text: {
+                    content: text
+                    }
+                    }
+                    ]
+                    }
                     };
 
                     // Send a request to the Notion API to create a new database entry
