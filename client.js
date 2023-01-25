@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "pages", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/config.toml", "start": 0, "end": 467}, {"filename": "/pages/C_0_s_1.toml", "start": 467, "end": 1209}, {"filename": "/pages/C_0_s_2.toml", "start": 1209, "end": 1825}, {"filename": "/pages/C_0_s_3.toml", "start": 1825, "end": 2085}, {"filename": "/pages/C_0_s_4.toml", "start": 2085, "end": 2543}, {"filename": "/pages/C_0_s_5.toml", "start": 2543, "end": 2648}, {"filename": "/pages/cond.toml", "start": 2648, "end": 2957}, {"filename": "/pages/data.toml", "start": 2957, "end": 3157}, {"filename": "/pages/final.toml", "start": 3157, "end": 3305}, {"filename": "/pages/index.toml", "start": 3305, "end": 3437}], "remote_package_size": 3437});
+    loadPackage({"files": [{"filename": "/config.toml", "start": 0, "end": 407}, {"filename": "/pages/C_0_s_1.toml", "start": 407, "end": 1121}, {"filename": "/pages/C_0_s_2.toml", "start": 1121, "end": 1737}, {"filename": "/pages/C_0_s_3.toml", "start": 1737, "end": 1997}, {"filename": "/pages/C_0_s_4.toml", "start": 1997, "end": 2455}, {"filename": "/pages/C_0_s_5.toml", "start": 2455, "end": 2560}, {"filename": "/pages/cond.toml", "start": 2560, "end": 2869}, {"filename": "/pages/data.toml", "start": 2869, "end": 3069}, {"filename": "/pages/final.toml", "start": 3069, "end": 3217}, {"filename": "/pages/index.toml", "start": 3217, "end": 3321}], "remote_package_size": 3321});
 
   })();
 
@@ -1397,7 +1397,7 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  82252: ($0) => { createButton(UTF8ToString($0)); }
+  82220: ($0) => { createButton(UTF8ToString($0)); }
 };
 
 
