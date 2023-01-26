@@ -1,0 +1,162 @@
+.gameButtonContainer {
+    display: flex;
+    justify-content: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+    flex-wrap: wrap;
+    width: 100%; /* take up full width of parent container */
+    margin: 0 auto; /* center the container horizontally */
+    position: fixed; /* position the container relative to the browser window */
+    bottom: 0; /* align the container to the bottom of the browser window */
+    left: 0; /* align the container to the left of the browser window */
+    right: 0; /* align the container to the right of the browser window */
+    z-index: 99; /* set the container to be above other elements on the page */
+}
+
+.gameButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #006400;
+    border: 2px solid #006400;
+    border-radius: 4px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    
+    /* mod button*/
+    position: relative;
+    left: 47%;
+    top: -250px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.inputField {
+    cursor: pointer;
+    display: none;   
+}
+
+.gameButton:hover {
+    background-color: #228B22;
+    border-color: #228B22;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(219, 223, 220, 0.514);
+}
+
+#gh-bar {
+    background-color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+    padding-top: 18px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 60px;
+    -webkit-box-shadow: 0px 3px 5px rgba(77, 75, 75, 0.719);
+    -moz-box-shadow:    0px 3px 5px rgba(77, 75, 75, 0.719);
+    box-shadow:         0px 3px 5px rgba(77, 75, 75, 0.719);
+    
+    /* mod 2*/
+    display: none;   
+}
+
+#gh-link {
+    text-decoration: none;
+    color: white;
+}
+
+#gh-bar:hover {
+    cursor: pointer;
+    color: rgb(44, 35, 35);
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.emscripten {
+    display: block;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto; 
+    cursor: pointer;
+}
+
+textarea.emscripten { 
+    cursor: pointer;
+    resize: none;
+    border-style: solid solid none solid;
+    border-color: darkgray;
+    border-width: 2px;
+    border-radius: 4.5px 4.5px 0 0;
+    margin: 50px auto 0px auto;
+    font-size: 17px;
+    padding: 20px 20px 0px 30px;
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    font-family: monospace;
+    color:chartreuse;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+#inputForm {
+    border: none;
+    position: relative;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
+    /* mod 2*/
+    display: none;   
+}
+
+#inputField { 
+    cursor: pointer;
+    position: absolute;
+    border-style: none solid solid solid;
+    border-color: darkgray;
+    border-width: 2px;
+    resize: none;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 15px 50px;
+    margin-top: -5px;
+    margin-left: -27px;
+    width: 800px;
+    height: 30px;
+    font-size: 17px;
+    display: block; 
+    background-color: black;
+    font-family: monospace;
+    color: chartreuse;
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+#angleBracket {
+    position: absolute;
+    width: 15px;
+    bottom: 2px;
+    left: -2px;
+    margin: -40px 0px 0px 0px;
+    display: block; 
+    font-size: 17px; 
+    font-family: monospace;
+    color: chartreuse;
+}
+
+div.emscripten { text-align: center; }
+div.emscripten_border { border: 1px solid black; }
