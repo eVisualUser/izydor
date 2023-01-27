@@ -47,39 +47,7 @@
 
 body {
     margin: 0;
-    background-color: rgba(219, 223, 220, 0.514);
-}
-
-#gh-bar {
-    background-color: black;
-    text-align: center;
-    font-family: verdana;
-    font-size: 20px;
-    padding-top: 18px;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 60px;
-    -webkit-box-shadow: 0px 3px 5px rgba(77, 75, 75, 0.719);
-    -moz-box-shadow:    0px 3px 5px rgba(77, 75, 75, 0.719);
-    box-shadow:         0px 3px 5px rgba(77, 75, 75, 0.719);
-    
-    /* mod 2*/
-    display: none;   
-}
-
-#gh-link {
-    text-decoration: none;
-    color: white;
-}
-
-#gh-bar:hover {
-    cursor: pointer;
-    color: rgb(44, 35, 35);
-    opacity: 0.8;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    background-color: rgba(25, 25, 25, 1);
 }
 
 .emscripten {
@@ -160,3 +128,25 @@ textarea.emscripten {
 
 div.emscripten { text-align: center; }
 div.emscripten_border { border: 1px solid black; }
+
+button.feedback {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #006400;
+    border: 2px solid #006400;
+    border-radius: 4px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+button.feedback:hover {
+    background-color: #228B22;
+    border-color: #228B22;
+}
