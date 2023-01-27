@@ -28,10 +28,12 @@
     
     /* mod button*/
     position: relative;
-    left: 42%;
+    /*left: 42%;*/
     top: -200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
 }
 
