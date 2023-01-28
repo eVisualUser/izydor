@@ -41,7 +41,10 @@
 .feedbackBox{
     position: absolute;
     top: 70%;
-    left: 45%;
+    /*left: 45%;*/
+    width: 50%;
+    height: 50%;
+    
     display: flex;
     margin: 0 auto;
     
