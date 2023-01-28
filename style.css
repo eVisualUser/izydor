@@ -41,8 +41,8 @@
 .feedbackBox{
     position: absolute;
     top: 70%;
-    left: 50%;
-    /*display: flex;*/
+    left: 45%;
+    display: flex;
     margin: 0 auto;
     
     flex-direction: column;
