@@ -41,10 +41,7 @@
 .feedbackBox{
     position: relative;
     top: 70%;
-    display: flex;
     margin: 0 auto;
-    
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -52,11 +49,8 @@
 
 .feedback{
     position: relative;
-    top: 70%;
-    display: flex;
+    /*top: 70%;*/
     margin: 0 auto;
-    
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 100;
