@@ -39,22 +39,17 @@
 }
 
 .feedbackBox{
-    position: relative;
+    position: absolute;
     top: 70%;
+    display: flex;
     margin: 0 auto;
+    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 100;
 }
 
-.feedback{
-    position: relative;
-    /*top: 70%;*/
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
 
 .inputField {
     cursor: pointer;
@@ -151,10 +146,12 @@ div.emscripten { text-align: center; }
 div.emscripten_border { border: 1px solid black; }
 
 button.feedback {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px 20px;
+    position: relative;
+    /*top: 70%;*/
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 
     font-family: 'Courier New', monospace;
     font-size: 14px;
