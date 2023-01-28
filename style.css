@@ -157,8 +157,8 @@ button.feedback {
     font-family: 'Courier New', monospace;
     font-size: 14px;
     text-decoration: none;
-    background-color: #006400;
-    border: 2px solid #006400;
+    background-color: #1F6AFF;
+    border: 1px solid #1F6AFF;
     border-radius: 4px;
     margin: 10px;
     transition: background-color 0.3s ease;
@@ -166,6 +166,6 @@ button.feedback {
 }
 
 button.feedback:hover {
-    background-color: #228B22;
-    border-color: #228B22;
+    background-color: #6F9FFF;
+    border-color: #6F9FFF;
 }
