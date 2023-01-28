@@ -39,6 +39,18 @@
     z-index: 100;
 }
 
+.feedbackBox{
+    position: relative;
+    top: 50px;
+    display: flex;
+    margin: 0 auto;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
 .inputField {
     cursor: pointer;
     display: none;   
