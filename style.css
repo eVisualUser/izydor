@@ -79,6 +79,7 @@ body {
 }
 
 textarea.emscripten { 
+    line-break: unset;
     cursor: pointer;
     resize: none;
     border-style: solid solid none solid;
