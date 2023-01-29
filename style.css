@@ -172,10 +172,3 @@ button.feedback:hover {
     background-color: #6F9FFF;
     border-color: #6F9FFF;
 }
-
-@media only screen and (max-width: 1000px)  {
-    textarea.emscripten { 
-        width: 800px !important;
-        height: 300px !important;
-    }
-}
