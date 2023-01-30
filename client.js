@@ -1397,7 +1397,7 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  82284: ($0) => { createButton(UTF8ToString($0)); }
+  82316: ($0) => { createButton(UTF8ToString($0)); }
 };
 
 
@@ -4117,6 +4117,11 @@ var ASM_CONSTS = {
       eval(UTF8ToString(ptr));
     }
 
+  /** @suppress{checkTypes} */
+  function _emscripten_run_script_int(ptr) {
+      return eval(UTF8ToString(ptr))|0;
+    }
+
   function _emscripten_run_script_string(ptr) {
       var s = eval(UTF8ToString(ptr));
       if (s == null) {
@@ -5729,6 +5734,7 @@ var asmLibraryArg = {
   "emscripten_memcpy_big": _emscripten_memcpy_big,
   "emscripten_resize_heap": _emscripten_resize_heap,
   "emscripten_run_script": _emscripten_run_script,
+  "emscripten_run_script_int": _emscripten_run_script_int,
   "emscripten_run_script_string": _emscripten_run_script_string,
   "emscripten_set_main_loop": _emscripten_set_main_loop,
   "environ_get": _environ_get,
